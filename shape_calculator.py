@@ -43,6 +43,9 @@ class Square(Rectangle):
     def __init__(self, side) -> None:
         self.width = side
         self.height = side
+    
+    def __repr__(self) -> str:
+        return f'{self.__class__.__qualname__}(side={self.width})'
 
     def set_side(self, side):
         self.width = side
