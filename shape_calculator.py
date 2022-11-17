@@ -33,5 +33,11 @@ class Rectangle:
         return int(amount_inside)
 
 
-class Square:
-    pass
+class Square(Rectangle):
+    def __init__(self, side) -> None:
+        self.width = side
+        self.height = side
+
+    def set_side(self, side):
+        self.width = side
+        self.height = side 
