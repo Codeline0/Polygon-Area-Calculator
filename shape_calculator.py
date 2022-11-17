@@ -2,6 +2,9 @@ class Rectangle:
     def __init__(self, width, height) -> None:
         self.width = width
         self.height = height
+    
+    def __repr__(self) -> str:
+        return f'{self.__class__.__qualname__}(width={self.width}, height={self.height})'
 
     def set_width(self, width):
         self.width = width
